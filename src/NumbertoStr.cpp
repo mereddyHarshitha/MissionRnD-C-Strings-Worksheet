@@ -72,7 +72,7 @@ void number_to_str(float number, char *str,int afterdecimal){
 		integer = -((int)number);
 		i = toString(integer, str + 1);
 
-		fraction = -(number + integer);
+		fraction = -(number + (float)integer);
 
 		if (afterdecimal != 0)
 		{
